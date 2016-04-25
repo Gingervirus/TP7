@@ -4,7 +4,7 @@ import java.util.Set;
 
 public interface Repository<E, ID> {
 
-    E findById(ID id);
+    E findById(String id);
 
     E save(E entity);
 

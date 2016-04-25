@@ -62,7 +62,7 @@ public class StudentRepositoryImpl extends SQLiteOpenHelper implements StudentRe
     }
 
     @Override
-    public StudentData findById(Long id) {
+    public StudentData findById(String id) {
 
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.query(

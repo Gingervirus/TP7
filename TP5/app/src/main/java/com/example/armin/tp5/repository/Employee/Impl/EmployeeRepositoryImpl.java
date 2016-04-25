@@ -59,7 +59,7 @@ public class EmployeeRepositoryImpl extends SQLiteOpenHelper implements Employee
     }
 
     @Override
-    public EmployeeData findById(Long id) {
+    public EmployeeData findById(String id) {
 
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.query(
